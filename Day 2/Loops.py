@@ -130,23 +130,23 @@ Break and Continue statements
 # nCr
 #  n!/r!(n-r)!
 
-n = int(input())
-r = int(input())
-nr = n-r
+# n = int(input())
+# r = int(input())
+# nr = n-r
 
-fact_n, fact_r, fact_nr = 1, 1, 1
-for i in range(1, n+1) :
-    fact_n *= i
+# fact_n, fact_r, fact_nr = 1, 1, 1
+# for i in range(1, n+1) :
+#     fact_n *= i
 
-for i in range(1, r+1) :
-    fact_r *= i
+# for i in range(1, r+1) :
+#     fact_r *= i
 
-for i in range(1, nr+1) :
-    fact_nr *= i
+# for i in range(1, nr+1) :
+#     fact_nr *= i
 
-ans = fact_n/(fact_r*fact_nr)
-print(ans)
- 
+# ans = fact_n/(fact_r*fact_nr)
+# print(ans)
+
 
 """
 strip() :- It removes the starting and ending white spaces
