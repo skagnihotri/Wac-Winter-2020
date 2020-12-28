@@ -197,7 +197,9 @@ In - Built functions
 print(max(1,2,300,4,5,6,7))
 print(min(10,2,300,4,5,6,7))
 
-import math
+# import math
 
-print(math.ceil(5.56))
-print(math.floor(5.56))
+from math import ceil, floor
+
+print(ceil(5.56))
+print(floor(5.56))
