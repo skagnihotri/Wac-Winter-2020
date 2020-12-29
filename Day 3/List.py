@@ -92,47 +92,80 @@ list_name[start_index : end_index]
 
 # print(a[::-1]) # it is going to reverse the list
 
-# inbuilt functions
-a = [1,1,1]
+# # inbuilt functions
+# a = [1,1,1]
 
-# inserts elements at last
-a.append(10)
-a.append(100)
-a.append(50)
-print(a)
+# # inserts elements at last
+# a.append(10)
+# a.append(100)
+# a.append(50)
+# print(a)
 
-# insert at a position
-a.insert(0, 4) # insert(pos, value)
-print(a)
+# # insert at a position
+# a.insert(0, 4) # insert(pos, value)
+# print(a)
 
-# deleting at last
-a.pop()
-print(a)
+# # deleting at last
+# a.pop()
+# print(a)
 
-# to remove the first occurance
-a.remove(1)
-print(a)
+# # to remove the first occurance
+# a.remove(1)
+# print(a)
 
 # sorting a list
-print(sorted(a, reverse= True))
+# print(sorted(a, reverse= True))
 
 
 # code
-
-if __name__ == '__main__':
-    n = int(input())
-    arr = map(int, input().split())
+# to find second largest number
+# if __name__ == '__main__':
+#     n = int(input())
+#     arr = map(int, input().split())
     
-    first = -1e10
-    second = -1e10
+#     first = -1e10
+#     second = -1e10
     
-    # print(first, second)
-    for i in arr :
+#     # print(first, second)
+#     for i in arr :
         
-        if i > first :
-            second = first
-            first = i
-        elif i > second and i < first:
-            second = i
+#         if i > first :
+#             second = first
+#             first = i
+#         elif i > second and i < first:
+#             second = i
             
-    print(second)
+#     print(second)
+
+
+# # print all sub-sequences
+# a = [1,2,3,4,5]
+
+# for i in range(len(a)) : # start index fix
+#     for j in range(i, len(a)) : # end index fix
+#         for k in range(i, j+1) : # printing the sub sequence
+#             print(a[k], end = ', ')
+#         print()
+
+
+## Doubt
+
+# def upto_N(n) :
+#     # Base case
+#     if n < 1 :
+#         return
+
+#     # recursive statement
+#     # print(n)
+#     upto_N(n-1) # suppose rec is printing unto n-1 number
+#     # print(n)
+
+#     # return statement
+#     return
+
+# upto_N(10)
+
+
+# n = int(input())
+
+# print(n)

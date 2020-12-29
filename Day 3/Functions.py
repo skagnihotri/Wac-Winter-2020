@@ -194,12 +194,12 @@ def func_name(para1, para2, ...) :
 In - Built functions
 """
 
-print(max(1,2,300,4,5,6,7))
-print(min(10,2,300,4,5,6,7))
+# print(max(1,2,300,4,5,6,7))
+# print(min(10,2,300,4,5,6,7))
 
-# import math
+# # import math
 
-from math import ceil, floor
+# from math import ceil, floor
 
-print(ceil(5.56))
-print(floor(5.56))
+# print(ceil(5.56))
+# print(floor(5.56))
