@@ -54,7 +54,7 @@ def play_game() :
 
     print_cur_state(cur_word, attempts) # to print the current state
 
-    while True :
+    while attempts > 0 :
         input_char = input("Guess the character : ")
         cur_word, attempts = check_state(selected_word, cur_word, input_char, attempts) # to check whether the input char is present or not
         print_cur_state(cur_word, attempts) # to print the current stater
