@@ -17,4 +17,4 @@ def pick_a_word() -> str:
     word_index = random.randint(0, len(list_of_word)-1) # random index
     return list_of_word[word_index]
 
-print(pick_a_word())
+# print(pick_a_word())
