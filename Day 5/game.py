@@ -28,8 +28,17 @@ def check_state(selected_word : str, cur_word : str, input_char : str, attempts 
     
     return cur_word, attempts
 
-def check_game_status() :
-    pass
+def check_game_status(selected_word : str, cur_word : str, attempts : int) -> bool :
+    if attempts <= 0 :
+        print('Sorry you Lost!!')
+        print(f"The word was : {selected_word}")
+        return True
+    
+    if cur_word == selected_word :
+        print("Congrats You Won!!")
+        return True
+
+    return False
 
 # random word generate, attemps, and user input
 def play_game() :
@@ -46,16 +55,15 @@ def play_game() :
     print_cur_state(cur_word, attempts) # to print the current state
 
     while True :
-        input_char = input("Guess the character :")
+        input_char = input("Guess the character : ")
         cur_word, attempts = check_state(selected_word, cur_word, input_char, attempts) # to check whether the input char is present or not
         
-        print_cur_state(cur_word, attempts) # to print the current state
+        print_cur_state(cur_word, attempts) # to print the current stater
 
-        break
-        # game_status = check_game_status() # to check the current status of the game
+        game_status = check_game_status(selected_word, cur_word, attempts) # to check the current status of the game
         
-        # if game_status :
-        #     break
+        if game_status :
+            break
 
 
 #---------------------------------------------------------------------------------#
